@@ -7,7 +7,7 @@ import ScrollToTopComp from "@/components/ui/scroll-to-top";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cleverdevloper.in"),
+  metadataBase: new URL("https://cleverdeveloper.in"),
   title: "Harshit Sharma",
   description:
     "Hello, I am a highly skilled and experienced Full Stack Developer specializing in MERN (MongoDB, Express.js, React.js, Node.js) and JAMstack (JavaScript, APIs, and Markup) development. I offer a wide range of services, from creating simple yet elegant websites like portfolios, landing pages, and blog applications to developing comprehensive e-commerce marketplaces like Amazon and Flipkart. All my projects are meticulously crafted to be full stack and production-ready, ensuring seamless functionality and optimal performance.",
@@ -22,10 +22,10 @@ export const metadata: Metadata = {
     description: "Developed by the one & only HARSHIT!",
     images: [
       {
-        url: "https://cleverdevloper.in/profile.jpg",
+        url: "https://cleverdeveloper.in/profile.jpg",
       },
     ],
-    url: "https://cleverdevloper.in/",
+    url: "https://cleverdeveloper.in/",
     siteName: "Portfolio",
     locale: "en_US",
     type: "website",
