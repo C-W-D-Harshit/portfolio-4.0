@@ -15,15 +15,23 @@ export const metadata: Metadata = {
     name: "Harshit Sharma",
   },
   openGraph: {
-    title: "Harshit Sharma",
-    description:
-      "Hello, I am a highly skilled and experienced Full Stack Developer specializing in MERN (MongoDB, Express.js, React.js, Node.js) and JAMstack (JavaScript, APIs, and Markup) development. I offer a wide range of services, from creating simple yet elegant websites like portfolios, landing pages, and blog applications to developing comprehensive e-commerce marketplaces like Amazon and Flipkart. All my projects are meticulously crafted to be full stack and production-ready, ensuring seamless functionality and optimal performance.",
-    url: "https://cleverdevloper.in",
-    type: "website",
+    title: {
+      default: "Portfolio",
+      template: "%s | Portfolio",
+    },
+    description: "Developed by the one & only HARSHIT!",
+    images: [
+      {
+        url: "https://cleverdevloper.in/profile.jpg",
+      },
+    ],
+    url: "https://cleverdevloper.in/",
+    siteName: "Portfolio",
     locale: "en_US",
-    siteName: "Harshit Sharma",
-    images: "/og.png",
+    type: "website",
   },
+  manifest: "/manifest.json",
+  icons: { apple: "/profile.jpg" },
   keywords: [
     "harshit sharma",
     "full stack developer",
@@ -92,6 +100,12 @@ export const metadata: Metadata = {
     "CWD full stack capabilities",
     "Harshit Sharma freelance developer",
   ],
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+    },
+  },
 };
 
 export default function RootLayout({
