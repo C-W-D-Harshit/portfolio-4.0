@@ -91,7 +91,7 @@ export default function Skills() {
     },
   ];
   return (
-    <div className="max-w-7xl mx-auto px-8 animate-move-up">
+    <div className="max-w-7xl mx-auto px-6 lg:px-8 animate-move-up">
       <Title
         text="Skills 🔪"
         className="flex flex-col items-center justify-center -rotate-6"
