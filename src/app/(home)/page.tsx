@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
+import Projects from "./components/Projects";
 
 export default function Page() {
   return (
@@ -16,6 +17,7 @@ export default function Page() {
       </div>
       <div className="max-w-7xl mx-auto p-5 mt-20">
         <Skills />
+        {/* <Projects /> */}
         <Footer />
       </div>
     </div>

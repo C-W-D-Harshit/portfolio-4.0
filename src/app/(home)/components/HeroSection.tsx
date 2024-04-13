@@ -2,6 +2,12 @@ import Link from "next/link";
 import React from "react";
 import { MovingBorderButton } from "../../../components/ui/moving-border";
 import Title from "./Title";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export default function HeroSection() {
   return (
@@ -15,7 +21,7 @@ export default function HeroSection() {
         </h1>
         <p className="md:w-96 text-lg text-gray-300">
           {
-            "Based in India, I'm a Fullstack devloper passionate about building a morden web applications that users love."
+            "Based in India, I'm a Fullstack devloper passionate about building morden web applications that users love."
           }
         </p>
         <Link
@@ -37,14 +43,27 @@ export default function HeroSection() {
           </div>
           <div className="glow absolute top-[35%] lg:top-[40%] right-1/2 -z-10"></div>
         </div>
-        <div className="absolute bottom-5 sm:bottom-14 left-0 sm:-left-10">
-          <MovingBorderButton
-            borderRadius="0.5rem"
-            className="p-3 font-semibold"
-          >
-            <p>📢 Available for Work</p>
-          </MovingBorderButton>
-        </div>
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Link
+                href={"/resume.pdf"}
+                target="_blank"
+                className="absolute bottom-5 sm:bottom-14 left-0 sm:-left-10"
+              >
+                <MovingBorderButton
+                  borderRadius="0.5rem"
+                  className="p-3 font-semibold"
+                >
+                  <p>📢 Available for Work</p>
+                </MovingBorderButton>
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Click to download resume!</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       </div>
     </div>
   );
